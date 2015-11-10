@@ -1,0 +1,133 @@
+<html>
+<head>
+	<title>This is a title of page</title>
+	
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+	<style>
+		table {
+		    border-collapse: collapse;
+		    width: 500px;
+		}
+
+		table, th, td {
+		    border: 1px solid black;
+		}
+		
+		table th, table td
+		{
+			padding: 15px;
+		}
+
+		.demo_css_div
+		{
+			background: yellow;
+			border: 2px dashed black;
+			width: 500px;
+			padding: 50px;
+		}
+
+	</style>
+
+	<script type="text/javascript" src="assets/jquery-1.11.3.min.js"></script>
+
+</head>
+<body>
+	<p>This is content of page</p>	
+	<p>This is content 2 of page</p>	
+	<p>This is content 3 of page</p>
+	
+	<a href="http://google.com">Click to Google.com</a>
+
+	<div class="content_description">
+		This i content description
+	</div>
+
+	<div class="content_footer">
+		This is a content footer
+	</div>
+
+	<div class="form">
+
+		<h2>Contact US</h2>
+		
+		<form action="http://localhost/asasphp/submit.php" method="POST">
+
+			<p>Contact Name</p>
+			
+			<p>
+				<input type="text" name="contact_name" value="">
+			</p>
+
+			<p>Gender</p>
+			
+			<p>
+				<input type="radio" name="gender" value="female"> Female <br>
+				<input type="radio" name="gender" value="male"> Male 
+			</p>
+
+			<p>Interest</p>
+			
+			<p>
+				<input type="checkbox" name="interest[]" value="sport"> Sport <br>
+				<input type="checkbox" name="interest[]" value="travel"> Travel 
+			</p>
+
+			<p>Address</p>
+			
+			<p>
+				<textarea name="address" id="" cols="30" rows="10"></textarea>				
+			</p>
+
+			<input type="submit" value="Submit Form">
+
+			
+		</form>
+
+	</div>
+
+	<div class="table">
+		
+		<table>
+			<thead>
+				
+				<tr>
+					<th>Name</th>
+					<th>Gender</th>
+					<th>Address</th>
+				</tr>
+				
+			</thead>
+
+			<tbody>
+				
+				<tr>
+					<td>Ahmad</td>
+					<td>Male</td>
+					<td>Petaling Jaya</td>
+				</tr>
+
+				<tr>
+					<td>Nora</td>
+					<td>Female</td>
+					<td>Kuala Lumput</td>
+				</tr>
+
+			</tbody>
+
+		</table>
+
+	</div>
+
+	<div class="demo_css_div">
+
+	This is a CSS DEMO
+		
+	</div>
+
+	<p>This is sample image</p>
+
+	<img src="get1.png" alt="">
+
+</body>
+</html>

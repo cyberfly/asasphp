@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<title>Asas jQuery</title>		
+		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		
+		<p>Price</p>
+
+		<p>
+			<input type="text" name="price" id="price" value="">
+		</p>
+
+		<p>Quantity</p>
+
+		<p>
+			<input type="text" name="quantity" id="quantity" value="">
+		</p>
+
+		<p>Total Price</p>
+
+		<p>
+			<input type="text" name="total_price" id="total_price" value="">
+		</p>
+
+		
+	</body>
+</html>
+<script type="text/javascript">
+	
+	$( document ).ready(function() {
+	    
+	    // letak code jQuery atau javascript di dalam ni
+
+	    $( "#price, #quantity" ).keyup(function() {
+
+	    	calculate_price ();
+
+	    });
+
+	    function calculate_price () {
+	    	
+	    	// get value from input field
+
+	    	var price = $( "#price").val();
+	    	var quantity = $( "#quantity").val();	    	
+
+	    	//convert string to number
+
+	    	price = parseFloat(price);
+	    	quantity = parseFloat(quantity);
+
+	    	var total_price = price * quantity;
+
+	    	// set new total price
+
+	    	$( "#total_price").val(total_price);
+
+	    }
+
+	});
+
+</script>
